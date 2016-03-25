@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Jquery", "Jquery", "{95C394A6-2303-4701-A6CC-C53AB5BC08D6}"
+	ProjectSection(SolutionItems) = preProject
+		Jquery\gulpfile.js = Jquery\gulpfile.js
+		Jquery\webpack.config.js = Jquery\webpack.config.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "plugins", "plugins", "{DF05810C-4951-4662-926A-38166ADFC744}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "product-selecter", "product-selecter", "{91425AEA-E0DD-4DF8-A62B-4A75C5224214}"
+	ProjectSection(SolutionItems) = preProject
+		Jquery\plugins\product-selecter\src.css = Jquery\plugins\product-selecter\src.css
+		Jquery\plugins\product-selecter\src.html = Jquery\plugins\product-selecter\src.html
+		Jquery\plugins\product-selecter\src.js = Jquery\plugins\product-selecter\src.js
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DF05810C-4951-4662-926A-38166ADFC744} = {95C394A6-2303-4701-A6CC-C53AB5BC08D6}
+		{91425AEA-E0DD-4DF8-A62B-4A75C5224214} = {DF05810C-4951-4662-926A-38166ADFC744}
+	EndGlobalSection
+EndGlobal
