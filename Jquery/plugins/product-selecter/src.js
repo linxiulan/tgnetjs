@@ -104,7 +104,7 @@ ProductTips.prototype.search = function () {
             _this.template.empty();
             if (d.items && d.items.length > 0) {
                 for (var i = 0; i < d.items.length; i++) {
-                    _this.template.append($("<li/>").html(d.items[i].name).data("data", d.items[i]).attr("title", d.items[i].full_name.replace(/\//g, '\\')));//{name,no,full_name}
+                    _this.template.append($("<li/>").html(d.items[i].name).data("data", d.items[i]).attr("title", d.items[i].full_name.replace(/<[^]+?>/g, '').replace(/\//g, '\\')));//{name,no,full_name}
                 }
                 if (d.items.length > 1 || currentVal != d.items[0].name || _this.noInput.val() != d.items[0].no) {
                     var offset = _this.input.offset();
@@ -178,6 +178,7 @@ ProductTemplate.prototype.add = function (name, brand, level, no) {
             no: no,
             level: level
         });
+        this.template.triggerHandler(ProductSelecter.event.change);
     }
     brand && $(".brand", $li).val(brand);
     level && $(".level", $li).find("input[value='" + level + "']").prop("checked", true);
