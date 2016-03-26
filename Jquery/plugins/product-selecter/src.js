@@ -289,7 +289,9 @@ ProductSelecter.prototype.add = function (name, brand, level, no) {
 }
 ProductSelecter.prototype.verify = function () {
     var items = this.template.getItems();
-    if(items.length == 1)
+    if (items.length == 0)
+        return true;
+    else if(items.length == 1)
         return items[0].verify();
     else{        
         var result = true;
