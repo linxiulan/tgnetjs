@@ -330,5 +330,6 @@ ProductSelecter.event = {
     change: "change.ProductSelecter",
     add: "add.ProductSelecter"
 }
+ProductSelecter.Tips = ProductTips;
 window.ProductSelecter = ProductSelecter;
 module.exports = ProductSelecter;
