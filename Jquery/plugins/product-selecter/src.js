@@ -205,6 +205,7 @@ ProductTemplate.prototype.del = function ($li) {
         this.list.find(".del").toggle(false);
     }
     $li.remove();
+    this.template.triggerHandler(ProductSelecter.event.change);
 }
 ProductTemplate.prototype.getItems = function () {
     var items = [], _this = this;

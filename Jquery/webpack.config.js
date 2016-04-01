@@ -9,7 +9,8 @@ module.exports = {
     resolve: {
         extensions: ['', '.js'],
         alias: {
-            'plugins': __dirname + '/plugins'
+            'plugins': __dirname + '/plugins',
+            'lib': __dirname + '/../lib'
         }
     },
     plugins: [
