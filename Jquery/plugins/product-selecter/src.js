@@ -53,7 +53,7 @@ var ProductTips = function () {
                 }
                 _this.onComplated && _this.onComplated();
                 _this.hide();
-            } else {
+            } else if (!_this.input.is(event.target)) {
                 _this.onComplated && _this.onComplated();
             }
         } 
